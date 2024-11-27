@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496325870368",
+    "project_id": "myartist-bc167",
+    "storage_bucket": "myartist-bc167.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496325870368:android:1277d9317371225242cd45",
+        "android_client_info": {
+          "package_name": "com.myartist.myartist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_cbFFY9kHJYmyfpwNjOS00ikHX5CNMyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
