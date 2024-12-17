@@ -37,6 +37,14 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.6.6
   firebase_core: ^3.8.0
+  google_fonts: ^6.2.1
+  firebase_auth: ^5.3.3
+  google_sign_in: ^6.2.2
+  moon_design: ^1.0.7
+  gap: ^3.0.1
+  sign_in_button: ^3.2.0
+  flutter_easyloading: ^3.0.5
+  cloud_firestore: ^5.5.0
 
 dev_dependencies:
   flutter_test:

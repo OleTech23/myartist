@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
+import 'package:moon_design/moon_design.dart';
+import 'package:myartist/app/modules/signup/views/authentication_view.dart';
 import 'package:myartist/app/routes/app_pages.dart';
 
 import '../controllers/signup_controller.dart';
@@ -48,7 +50,7 @@ class SignupView extends GetView<SignupController> {
                         children: [
                           Text(
                             "Create your\nFree Account now!",
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+                            style: TextStyle(color: Colors.white, fontSize: 28),
                           ),
                           const SizedBox(height: 20),
                           AccountButtonSwitcher(
@@ -74,18 +76,20 @@ class SignupView extends GetView<SignupController> {
                     Column(
                       children: [
                         const SizedBox(height: 40),
-                        ElevatedButton(
-                          onPressed: () => buildSignUp(context),
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.white,
-                            backgroundColor: Colors.blue,
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 50, vertical: 15),
-                            textStyle: const TextStyle(fontSize: 18),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: MoonButton(
+                            onTap: () => Get.to(
+                              SignupAuthenticationView(),
+                              transition: Transition.rightToLeftWithFade,
+                            ),
+                            isFullWidth: true,
+                            backgroundColor: Colors.white,
+                            textColor: Colors.black,
+                            label: const Text("Continue"),
                           ),
-                          child: const Text("Continue"),
                         ),
-                        const SizedBox(height: 20),
+                        const SizedBox(height: 5),
                         TextButton(
                           onPressed: () =>
                               Navigator.of(context).pushNamed(Routes.LOGIN),
